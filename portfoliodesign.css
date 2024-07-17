@@ -22,9 +22,7 @@ p {
 hr {
     height: 1px;
     background-color: rgb(0, 0, 0);
-    margin: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 40px 50px;
 }
 
 
@@ -35,7 +33,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
+    height: 10vh;
     background-color: rgb(57, 90, 105);
 }
 
@@ -58,16 +56,12 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgb(255, 2, 200);
-    font-size: 1rem;
+    font-size: 17px;
 }
 
 .leftcorner {
     color: rgb(57, 245, 245);
     font-size: 30px;
-}
-
-#firstheader-nav {
-    height: 50px;
 }
 
 /* First Section */
@@ -85,7 +79,7 @@ h2 {
 }
 
 .firstsection div {
-    width: 40%;
+    width: 42%;
 }
 
 .leftsection_first {
@@ -105,25 +99,23 @@ h2 {
     cursor: pointer;
     width: 15%;
     margin: 8px;
-    height: 1.8rem;
+    height: 2rem;
 }
 
 .firstsection-button {
-    margin: 15px 142px;
+    margin: 2vh 12vw;
 }
 
-.btn-resume,
-.btn-Contact {
-    width: 94px;
-    height: 42px;
+.btn-resume {
+    width: 9vw;
+    height: 8vh;
     font-weight: bold;
     border-color: #62edff;
-    border-radius: 2rem;
+    border-radius: 25px;
     color: rgb(221, 60, 60);
 }
 
-.btn-resume:hover,
-.btn-Contact:hover {
+.btn-resume:hover {
     background-color: rgb(125, 255, 147);
     cursor: pointer;
 }
@@ -135,7 +127,7 @@ h2 {
 #social-page {
     display: flex;
     justify-content: center;
-    margin: 0px 140px;
+    margin: 0vw 12vw;
 }
 
 /* About Section */
@@ -149,7 +141,8 @@ h2 {
 }
 
 .about {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: #ff8100;
     font-size: xx-large;
 }
@@ -177,7 +170,7 @@ h2 {
     border-radius: 1.6rem;
     border: 4px solid;
     border-color: #06eb26;
-    box-shadow: 1px 2px 5px 3px #ff725d;
+    box-shadow: 1px 1px 3px 1px #ff725d;
     text-align: center;
 }
 
@@ -204,8 +197,8 @@ h2 {
 .thirdsection {
     display: flex;
     flex-direction: row;
-    gap: 8rem;
-    margin: 3rem 6rem;
+    gap: 5rem;
+    margin: 3rem;
 }
 
 article {
@@ -235,7 +228,7 @@ article {
 
 .profiency {
     font-weight: 500;
-    color: rgba(181, 255, 112,0.91);
+    color: rgba(181, 255, 112, 0.91);
 }
 
 .icon3 {
@@ -312,17 +305,18 @@ article {
 .contact_information a {
     font-size: large;
     font-weight: bold;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .contact_information a:hover {
     cursor: pointer;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .contact_information a:visited {
     color: rgba(32, 55, 255, 0.795);
-}    
+}
+
 .contact_information span {
     font-size: large;
     font-weight: bold;
@@ -344,4 +338,185 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* Responsive Section */
+
+@media only screen and (max-width : 930px) {
+    .firstsection {
+        gap: 4rem;
+    }
+
+    .leftsection_first {
+        margin: 0px 30px;
+        font-size: 25px;
+    }
+
+    .firstsection-button {
+        margin: 0 11vw;
+    }
+
+    .btn-resume {
+        width: 8vw;
+        height: 6vh;
+    }
+
+    .rightsection_first img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+
+    #social-page {
+        margin: 1vh 11vw;
+    }
+
+    .icon1 {
+        width: 3vw;
+        margin: 2px;
+        height: 4vh;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .secondsection {
+        gap: 4rem;
+        margin: 25px 100px;
+    }
+
+    .about-details {
+        gap: 2rem;
+        margin: 1rem 0rem;
+        display: flex;
+    }
+
+    .Experience-Details {
+        padding: 0px 40px;
+    }
+
+    .icon2 {
+        width: 3vw;
+        margin-top: 10px;
+        height: 5vh;
+    }
+
+    .Experience-Details h3 {
+        font-size: 20px;
+    }
+
+    .about-picture {
+        width: 400px;
+        height: 380px;
+        margin: 20px 0px;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    nav {
+        height: 50px;
+        width: 105vw;
+    }
+
+    .btn-resume {
+        width: 10vw;
+        height: 4vh;
+    }
+
+    #social-page {
+        margin: 1vh 11vw;
+    }
+
+    .icon1 {
+        width: 4vw;
+        margin: 2px;
+        height: 3vh;
+    }
+
+    hr {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .secondsection {
+        gap: 2rem;
+        margin: 25px 80px;
+    }
+
+    .about-picture {
+        width: 365px;
+        height: 330px;
+        margin-left: 45px;
+    }
+
+    .about-details {
+        gap: 1rem;
+        margin: 1rem 0rem;
+        width: 50vw;
+        height: 16vh;
+    }
+
+    .Experience-Details {
+        padding: 0px 20px;
+    }
+
+    .icon2 {
+        width: 3vw;
+        margin-top: 10px;
+        height: 3vh;
+    }
+
+    .thirdsection {
+        gap: 3rem;
+        margin-right: 0rem;
+    }
+
+    .leftection_third {
+        width: 38vw;
+    }
+
+    .Experience-Title {
+        font-weight: 500;
+        font-size: 24px;
+        margin: 1rem 1rem;
+    }
+
+    .Article-Experience {
+        gap: 1rem;
+    }
+
+    .contact-container {
+        width: fit-content;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        margin-left: 5vw;
+    }
+
+    .contact_information {
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .icon4 {
+        cursor: default;
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact_information a {
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+    }
 }
